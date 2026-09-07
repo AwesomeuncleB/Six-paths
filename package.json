@@ -7,5 +7,10 @@
     "build": "npm --prefix source run build",
     "start": "npm --prefix source run start",
     "lint": "npm --prefix source run lint"
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
   }
 }

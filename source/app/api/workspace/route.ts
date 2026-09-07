@@ -60,7 +60,7 @@ function update(data:AppData, action:z.infer<typeof actionSchema>){
   notify(`${r!.category} repair: ${action.status.toLowerCase()}.`);
  }
  if(action.type==='payment'){
-  const p=data.payments.find(p=>p.id===action.id);if(!p||p.status!=='Due')fail('This bill is no longer due.');p!.status='Paid';p!.date=now;notify(`${p!.label} demo payment recorded.`);
+  const p=data.payments.find(p=>p.id===action.id);if(!p||p.status!=='Due')fail('This bill is no longer due.');p!.status='Paid';p!.date=now;notify(`${p!.label} payment recorded.`);
  }
  if(action.type==='provider'){const p=data.providers.find(p=>p.id===action.id);if(!p)fail('Provider not found');p!.status=action.status;}
  if(action.type==='user'){const u=data.users.find(u=>u.id===action.id);if(!u)fail('User not found');u!.status=action.status;}
