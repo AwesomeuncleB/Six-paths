@@ -1,0 +1,35 @@
+# Node dependencies
+node_modules/
+source/node_modules/
+
+# Next.js & Vite build outputs
+.next/
+source/.next/
+out/
+source/out/
+dist/
+source/dist/
+.wrangler/
+source/.wrangler/
+.sites-runtime/
+source/.sites-runtime/
+outputs/
+source/outputs/
+work/
+source/work/
+
+# OS & Environment files
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel
+.vercel
